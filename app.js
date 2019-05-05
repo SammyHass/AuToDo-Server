@@ -61,7 +61,7 @@ app.get("/api/:uid/login", (req, res) => { // create a route, GET /api/:uid/logi
 	let firstName = data[req.params.uid]["firstName"];
 	let lastName = data[req.params.uid]["lastName"];
 
-	res.json({. // return the sucessful response.
+	res.json({ // return the sucessful response.
 		success: true,
 		firstName: firstName,
 		lastName: lastName,
