@@ -1,10 +1,26 @@
-before_script:
-  - apt-get update && apt-get install nodejs
-  - node -v
-  - npm -v
+image: node:10
 
-runit:
-	script:
-    - npm start
+cache:
+  paths:
+    - node_modules/
 
+stages:
+  - build
+  - run
 
+install_dependencies:
+  stage: build
+  script:
+    - npm install
+  artifacts:
+    paths:
+      - node_modules/
+    only:
+      - dev
+    except:
+      - mast
+
+server_listen:
+  stage: run
+  script:
+    npm start
