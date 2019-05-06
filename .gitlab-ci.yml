@@ -20,4 +20,4 @@ server_listen:
   stage: production
   type: deploy
   script:
-    npm start
+    - npm start
