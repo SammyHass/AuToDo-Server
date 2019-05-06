@@ -15,11 +15,7 @@ install_dependencies:
   artifacts:
     paths:
       - node_modules/
-    only:
-      - dev
-    except:
-      - mast
-
+      
 server_listen:
   stage: run
   script:
