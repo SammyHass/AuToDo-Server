@@ -1,0 +1,10 @@
+before_script:
+  - apt-get update && apt-get install nodejs
+  - node -v
+  - npm -v
+
+runit:
+	script:
+    - npm start
+
+
