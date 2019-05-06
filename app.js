@@ -99,6 +99,4 @@ app.get("/api/:uid/todo/", (req, res) => { // create a route, /api/:uid/todo, us
 
 
 
-app.listen(process.env.PORT || 8000); // listen on. port 8000, api made live and accessible via requests to localhost:8000
-
-
+app.listen(process.env.PORT || 3000); // listen on port 3000, api made live.
