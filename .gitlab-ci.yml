@@ -6,7 +6,7 @@ cache:
 
 stages:
   - build
-  - run
+  - production
 
 install_dependencies:
   stage: build
@@ -17,6 +17,7 @@ install_dependencies:
       - node_modules/
       
 server_listen:
-  stage: run
+  stage: production
+  type: deploy
   script:
     npm start
