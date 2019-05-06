@@ -1,15 +1,16 @@
 {
   "name": "todo_api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Server Side Task Mgr",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Sammy Hass <me@sammyhass.io>",
   "license": "ISC",
+  "repository": "https://gitlab.com/Task_Management_CompSci/todo_api",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
