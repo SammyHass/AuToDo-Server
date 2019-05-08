@@ -5,11 +5,14 @@ const express = require("express"), // use express in order to host the server o
 	  bodyParser = require("body-parser"), // use body parser in order to process JSON request to the server.
       fs = require("fs"), // use fs (file system) in order to read and write local files such as data.json
       _ = require("underscore");// use underscore to speed up searching through object literals and arrays
+      morgan = require('morgan')
+
 
 var data = require("./data.json"); // use data.json file which acts as the database - stores contents of data.json within data variable.
 
 let app = express(); // create the app by calling express. See express docs for more.
 app.use(bodyParser.json()); // use body parser json helper as middleware 
+app.use(morgan('combined'))
 
 // Note: api route is http://localhost:8000, so if route is GET /api/login, the full request is just GET http://localhost:8000/api/login
 app.post("/api/register", (req, res) => { // create a route, POST /api/register, used for registering new users.
