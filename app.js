@@ -46,10 +46,9 @@ app.post("/api/register", (req, res) => { // create a route, POST /api/register,
 });
 
 app.delete("/api/todo", (req, res) => { // create a route, DELETE /api/todo, for tasks
-	console.log(req.body);
-	console.log(data[req.body.uid]);
-	data[req.body.uid]["lists"][req.body.cat] = _.reject(data[req.body.uid]["lists"][req.body.cat], (todo) => { // remove the task from the stored variable (using underscore).
-		return todo["id"] == req.body.todoId;
+	console.log(req.query);
+	data[req.query.uid]["lists"][req.query.category] = _.reject(data[req.query.uid]["lists"][req.query.category], (todo) => { // remove the task from the stored variable (using underscore).
+		return todo["id"] == req.query.todoId;
 	});
 
 
