@@ -12,8 +12,8 @@
   "license": "ISC",
   "repository": "https://gitlab.com/Task_Management_CompSci/todo_api",
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.4",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
     "hex2dec": "^1.1.1",
     "json": "^9.0.6",
     "mongodb": "^3.1.10",
