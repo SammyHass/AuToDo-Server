@@ -13,7 +13,7 @@
   "repository": "https://gitlab.com/Task_Management_CompSci/todo_api",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "hex2dec": "^1.1.1",
     "json": "^9.0.6",
     "mongodb": "^3.1.10",
